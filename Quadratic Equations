@@ -1,0 +1,16 @@
+a = int(input())
+b = int(input())
+c = int(input())
+discriminant = (b*b)-4*a*c
+print(discriminant)
+if discriminant > 0:
+    x = (-b-(pow(discriminant,0.5))/(2*a))
+    y = (-b+(pow(discriminant,0.5))/(2*a))
+    print(x)
+    print(y)
+else:
+    if discriminant == 0:
+        x=(-b-(pow(discriminant,0.5))/(2*a))
+        print(x)
+    if discriminant < 0:
+        print("No resolution")
